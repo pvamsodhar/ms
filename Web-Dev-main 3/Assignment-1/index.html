@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment-1</title>
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img src="Images/logo.svg" alt="Minecraft Logo" id="logo">
+        <nav>
+            <ul class="main-menu">
+                <li><a href="#overview">Game Overview</a></li>
+                <li><a href="#highlights">Game Highlights</a></li>
+                <li><a href="#get-started">How to Get Started</a></li>
+            </ul>
+            <ul class="quiz-menu">
+                <li><a href="#quiz">Quiz &#9662;</a>
+                    <ul class="dropdown">
+                        <li><a href="#question1">Question 1</a></li>
+                        <li><a href="#question2">Question 2</a></li>
+                        <li><a href="#question3">Question 3</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="overview">
+            <h1>Game Overview</h1>
+            <p>Minecraft is a 3D sandbox game that has no required goals to accomplish, allowing players a large amount of freedom in choosing how to play the game.The core gameplay revolves around picking up and placing these objects. These blocks are arranged in a 3D grid, while players can move freely around the world. Players can "mine" blocks and then place them elsewhere, enabling them to build things.The game also contains a material called redstone, which can be used to make primitive mechanical devices, electrical circuits, and logic gates, allowing for the construction of many complex systems.</p>
+            <p>In Minecraft, players explore a blocky, pixelated, procedurally generated, three-dimensional world with virtually infinite terrain. Players can discover and extract raw materials, craft tools and items, and build structures, earthworks, and machines. Depending on their chosen game mode, players can fight hostile mobs, as well as cooperate with or compete against other players in the same world. Game modes include a survival mode (in which players must acquire resources to build in the world and maintain health), creative mode (in which players have unlimited resources and the ability to fly), spectator mode (in which players can fly, go through blocks, and enter the bodies of other players and entities), adventure mode (in which players have to survive without being able to build and place blocks), and hardcore mode (in which the difficulty is set to Hard and dying causes the player to lose their ability to play on that world).
+            Minecraft has two alternative dimensions besides the Overworld (the main world): the Nether and the End.</p>
+        </section>
+
+        <section id="highlights">
+            <h1>Game Highlights</h1>
+            <div class="highlight">
+                <button id="prev-img">&#9664;</button>
+                <img src="img1.avif" alt="Highlight Image" id="highlight-img">
+                <div class="img-info">
+                    <h3 id="box-title">New to Minecraft?</h3>
+                    <p id="box-text">Explore our Tips for Beginners: from how you craft or use a controller, to how you play with friends.</p>
+                </div>
+                <a href="https://www.minecraft.net/en-us/minecraft-tips-for-beginners" id="ext-link">Get Started &#9654;</a>
+                <button id="next-img">&#9654;</button>
+            </div>
+        </section>
+
+        <section id="get-started">
+            <h1>How to Get Started</h1>
+            <p>To start playing Minecraft, you will need:</p>
+            <ul>
+                <li>A computer or gaming console</li>
+                <li>An internet connection (for downloading the game and multiplayer modes)</li>
+                <li>A Minecraft account</li>
+            </ul>
+            <p>Beginner tips:</p>
+            <ul>
+                <li>Start by collecting wood and stone to craft basic tools.</li>
+                <li>Build a shelter before nightfall to protect yourself from mobs.</li>
+                <li>Explore caves for valuable resources like coal, iron, and diamonds.</li>
+            </ul>
+        </section>
+    </main>
+
+    <section id="quiz">
+        <h1>Minecraft Quiz</h1>
+        <p>Test your Minecraft knowledge!</p>
+        <form id="quiz-form">
+            <div id="question1" class="quiz-question">
+                <label for="armor">What is the weakest Minecraft armor made with?</label><br>
+                <input type="radio" id="iron" name="armor" value="Iron">
+                <label for="iron">Iron</label><br>
+                <input type="radio" id="chainmail" name="armor" value="Chainmail">
+                <label for="chainmail">Chainmail</label><br>
+                <input type="radio" id="leather" name="armor" value="Leather">
+                <label for="leather">Leather</label><br>
+                <input type="radio" id="gold" name="armor" value="Gold">
+                <label for="gold">Gold</label><br>
+                <button type="button" class="check-answer" data-question="armor">Check Answer</button>
+                <div class="result"></div>
+            </div>
+            <div id="question2" class="quiz-question">
+                <label for="original-name">What was the original name of Minecraft when it was first published?</label><br>
+                <input type="radio" id="mine-crafter" name="original-name" value="Mine-Crafter">
+                <label for="mine-crafter">Mine-Crafter</label><br>
+                <input type="radio" id="cave-game" name="original-name" value="Cave Game">
+                <label for="cave-game">Cave Game</label><br>
+                <input type="radio" id="craft-survive" name="original-name" value="Craft&Survive">
+                <label for="craft-survive">Craft&Survive</label><br>
+                <input type="radio" id="mini-craft" name="original-name" value="MiniCraft">
+                <label for="mini-craft">MiniCraft</label><br>
+                <button type="button" class="check-answer" data-question="original-name">Check Answer</button>
+                <div class="result"></div>
+            </div>
+            <div id="question3" class="quiz-question">
+                <label for="ridden-animal">Which one of these animals can be ridden with a saddle along with horses and mules?</label><br>
+                <input type="radio" id="cow" name="ridden-animal" value="Cow">
+                <label for="cow">Cow</label><br>
+                <input type="radio" id="spider" name="ridden-animal" value="Spider">
+                <label for="spider">Spider</label><br>
+                <input type="radio" id="goat" name="ridden-animal" value="Goat">
+                <label for="goat">Goat</label><br>
+                <input type="radio" id="pig" name="ridden-animal" value="Pig">
+                <label for="pig">Pig</label><br>
+                <button type="button" class="check-answer" data-question="ridden-animal">Check Answer</button>
+                <div class="result"></div>
+            </div>
+        </form>
+        <p id="quiz-result"></p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Minecraft Fan Page</p>
+        <p><a href="https://www.minecraft.net">Official Minecraft Website</a></p>
+        <p><a href="https://www.minecraftforum.net">Minecraft Forums</a></p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,64 @@
+{% extends "layout.html" %}
+
+{% block title %}
+Tweet Homepage
+{% endblock %}
+
+{% block content %}
+<style>
+    .navbar {
+        background-color: #00011c;
+        height: 60px;
+    }
+    .navbar-brand {
+        color: white;
+    }
+    .card-header {
+        background-color: gray;
+    }
+    .section-header {
+        margin-top: 20px;
+        font-size: 24px;
+        color: ghostWhite;
+    }
+    .section {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        padding: 20px;
+        background-color: #545454;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+    .btn-primary {
+        background-color: #007bff;
+        border: none;
+    }
+</style>
+
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-md-8 offset-md-2">
+            <div class="card">
+                <div class="card-header">
+                    Welcome, {{ user.username }}!
+                </div>
+                <div class="card-body">
+                    <p>This is a project to showcase all web pages that I develop. Start exploring the sections below...</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2 class="section-header">Tweet Section</h2>
+        <p>Click below to view and create tweets.</p>
+        <a href="{% url 'index' %}" class="btn btn-primary">Go to Tweets</a>
+    </div>
+
+    <div class="section">
+        <h2 class="section-header">Upcoming Features</h2>
+        <p>Stay tuned for more features like Discord-like server rooms, games like GeoGuessr, quizzes, etc.</p>
+    </div>
+
+</div>
+{% endblock %}

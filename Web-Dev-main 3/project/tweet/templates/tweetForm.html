@@ -1,0 +1,14 @@
+{% extends "layout.html" %}
+
+{% block title %}Create/Edit Tweet{% endblock %}
+
+{% block content %}
+<div class="container mt-5">
+    <h1>Create/Edit Tweet</h1>
+    <form method="POST" enctype="multipart/form-data">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit" class="btn btn-primary">Save</button>
+    </form>
+</div>
+{% endblock %}

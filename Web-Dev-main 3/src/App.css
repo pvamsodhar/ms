@@ -1,0 +1,12 @@
+.App {
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
+  transition: background-color 1s;
+}
+
+.dark-mode {
+  background-color: #121212;
+  color: #e0e0e0;
+}
+
